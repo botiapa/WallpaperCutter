@@ -20,11 +20,12 @@ if __name__ == "__main__":
     if(len(sys.argv) > 1):
         paddingWidth = 0
         paddingHeight = 0
-        if(len(sys.argv) == 3):
+        if(len(sys.argv) > 2):
             paddingWidth = int(sys.argv[2])
-        if(len(sys.argv) == 4):
+        if(len(sys.argv) > 3):
             paddingHeight = int(sys.argv[3])
 
+        print("AFAFAF: " +  str(paddingWidth))
         imgpath = sys.argv[1]
         im = Image.open(imgpath)
         fullImgWidth, fullImgHeight = im.size
